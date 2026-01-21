@@ -1,0 +1,27 @@
+.comp2Container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+}
+
+.comp2Container > img {
+    height: 100%;
+}
+
+.comp2Right {
+    height: 60%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp2Text {
+    width: 600px;
+    text-align: right;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 3rem;
+    color: #08843B;
+}

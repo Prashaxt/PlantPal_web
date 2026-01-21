@@ -1,0 +1,23 @@
+.aboutContainer {
+    padding: 0px 15%;
+    /* padding-top: 10px; */
+    /* height: 35vh; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.aboutHeading {
+    font-family: 'Rilman';
+    font-size: 4rem;
+    color: #08843B;
+    margin-bottom: 25px;
+}
+.aboutParagraph {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    color: #005C22;
+    text-align: justify;
+    
+}

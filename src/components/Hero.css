@@ -1,0 +1,23 @@
+.heroContainer {
+    height: 95vh;
+    background-image: url(../assets/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.heroContainer > div {
+    font-family: 'Rilman';
+    font-size: 3.8rem;
+    color: white;
+    position: relative;
+    top: 15%;
+    
+}
+
