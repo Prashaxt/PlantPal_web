@@ -1,7 +1,7 @@
 import './App.css'
 import AboutUs from './components/AboutUs'
 import Comp1 from './components/Comp1'
-import Comp2 from './components/comp2'
+import Comp2 from './components/Comp2'
 import Footer from './components/Footer'
 import HelpSupport from './components/HelpSupport'
 import Hero from './components/Hero'
