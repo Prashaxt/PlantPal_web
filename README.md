@@ -1,16 +1,48 @@
-# React + Vite
+#  PlantPal Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page and website for PlantPal - an IoT-powered smart plant care system that monitors soil moisture, temperature, humidity, and light levels in real-time.
 
-Currently, two official plugins are available:
+##  About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PlantPal Web is the marketing and informational website for the PlantPal IoT ecosystem. This site showcases the features, benefits, and capabilities of the PlantPal system, which includes:
 
-## React Compiler
+- Real-time plant monitoring via ESP32 hardware
+- Mobile app for iOS and Android (React Native)
+- Remote watering control from anywhere
+- Historical analytics and automated alerts
+- Multi-device dashboard support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Tech Stack
 
-## Expanding the ESLint configuration
+- **React** - UI framework
+- **Vite** - Build tool and dev server
+- **CSS** - Styling
+- **ESLint** - Code linting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Related Projects
+
+- **PlantPal Mobile App** - React Native application for real-time monitoring and control
+- **PlantPal Hardware** - ESP32-based IoT device with 4-sensor array
+
+##  Features Highlighted on Website
+
+-  Real-time sensor monitoring
+-  Remote watering control
+-  Historical data analytics
+-  Automated care alerts
+-  Multi-device support
+-  Sub-second actuation speed
+
+##  License
+
+This project is part of the PlantPal ecosystem.
+
+##  Author
+
+**Prashant Prasad**
+- GitHub: [@Prashaxt](https://github.com/Prashaxt)
+- 
+
+---
+
+*Making plant care smarter, one sensor at a time* 
