@@ -1,5 +1,5 @@
 import React from 'react'
-import './comp1.css'
+import './Comp1.css'
 
 const Comp1 = () => {
   return (
