@@ -1,19 +1,22 @@
-.wwwdContainer {
-  height: 95vh;
+.wwwd-container {
+  min-height: 95vh;
   background-color: rgb(247, 247, 247);
   padding: 40px 8%;
+  display: flex;
+  flex-direction: column;
 }
 
-.wwwdText {
-  font-family: 'Rilman';
-  font-size: 3.5rem;
+.wwwd-text {
+  font-family: 'Rilman', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   color: #1F1F1F;
   text-align: center;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 
-.wwwdBottom {
-  height: 80%;
+.wwwd-bottom {
+  flex: 1;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -21,36 +24,246 @@
 }
 
 .card {
-  width: 44%;
-  height: 90%;
+  flex: 1;
+  max-width: 600px;
+  min-height: 500px;
   border-radius: 30px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   padding: 24px;
   background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cardImage {
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
   width: 100%;
   height: 45%;
+  min-height: 200px;
   border-radius: 22px;
   object-fit: cover;
+  margin-bottom: 20px;
 }
-.card > div {
+
+.card-content {
   padding-left: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.cardHeading {
+.card-heading {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 600;
+  color: #1F1F1F;
+  margin-bottom: 8px;
 }
 
-.cardDescription {
+.card-description {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   font-weight: 400;
   color: #1F1F1F;
-  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .wwwd-container {
+    padding: 50px 10%;
+  }
+
+  .wwwd-text {
+    font-size: 3.8rem;
+    margin-bottom: 60px;
+  }
+
+  .wwwd-bottom {
+    gap: 50px;
+  }
+
+  .card {
+    padding: 30px;
+    border-radius: 35px;
+  }
+
+  .card-image {
+    border-radius: 25px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  .wwwd-container {
+    padding: 35px 6%;
+  }
+
+  .wwwd-text {
+    margin-bottom: 40px;
+  }
+
+  .wwwd-bottom {
+    gap: 30px;
+  }
+
+  .card {
+    min-height: 450px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .wwwd-container {
+    min-height: auto;
+    padding: 40px 5%;
+  }
+
+  .wwwd-text {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin-bottom: 35px;
+  }
+
+  .wwwd-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+  }
+
+  .card-image {
+    height: 250px;
+    min-height: 250px;
+  }
+
+  .card-description {
+    text-align: left;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .wwwd-container {
+    padding: 30px 5%;
+  }
+
+  .wwwd-text {
+    font-size: clamp(1.6rem, 6vw, 2.5rem);
+    margin-bottom: 30px;
+  }
+
+  .wwwd-bottom {
+    gap: 25px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 25px;
+    min-height: 380px;
+  }
+
+  .card-image {
+    height: 200px;
+    min-height: 200px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+  }
+
+  .card-content {
+    padding-left: 12px;
+    gap: 8px;
+  }
+
+  .card-heading {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    margin-bottom: 6px;
+  }
+
+  .card-description {
+    font-size: clamp(0.875rem, 2vw, 1.1rem);
+    line-height: 1.65;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .wwwd-container {
+    padding: 25px 4%;
+  }
+
+  .wwwd-text {
+    font-size: clamp(1.4rem, 7vw, 2.2rem);
+    margin-bottom: 25px;
+  }
+
+  .wwwd-bottom {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 20px;
+    min-height: 350px;
+  }
+
+  .card-image {
+    height: 180px;
+    min-height: 180px;
+    border-radius: 15px;
+  }
+
+  .card-content {
+    padding-left: 8px;
+  }
+
+  .card-heading {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+  }
+
+  .card-description {
+    font-size: clamp(0.813rem, 2.5vw, 1rem);
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 375px) {
+  .wwwd-container {
+    padding: 20px 4%;
+  }
+
+  .wwwd-text {
+    font-size: clamp(1.3rem, 7.5vw, 2rem);
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 18px;
+    min-height: 320px;
+  }
+
+  .card-image {
+    height: 160px;
+    min-height: 160px;
+    border-radius: 14px;
+  }
+
+  .card-heading {
+    font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+  }
+
+  .card-description {
+    font-size: clamp(0.75rem, 3vw, 0.95rem);
+    line-height: 1.7;
+  }
 }

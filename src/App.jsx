@@ -1,6 +1,5 @@
 import './App.css'
 import AboutUs from './components/AboutUs'
-import Comp1 from './components/Comp1'
 import Comp2 from './components/Comp2'
 import Footer from './components/Footer'
 import HelpSupport from './components/HelpSupport'
@@ -13,13 +12,11 @@ function App() {
 
   return (
     <>
-      
+
       <section id="home">
-      <Navbar />
+        <Navbar />
         <Hero />
       </section>
-
-      
 
       <section id="aboutUs">
         <AboutUs />
@@ -27,7 +24,6 @@ function App() {
 
       <SubHero />
 
-      <Comp1 />
       <WWWD />
 
       <section id="HelpSupport">

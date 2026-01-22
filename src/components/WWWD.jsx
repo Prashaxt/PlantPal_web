@@ -31,24 +31,25 @@ const WWWD = () => {
     <div className="card">
       <img src={image} alt={title} className="cardImage" />
       <div>
-      <h3 className='cardHeading'>{title}</h3>
-      <p className='cardDescription'>{description}</p>
+        <h3 className='cardHeading'>{title}</h3>
+        <p className='cardDescription'>{description}</p>
       </div>
     </div>
   );
 
   return (
-    <div className='wwwdContainer'>
-      <div className='wwwdText'>What Do We Do</div>
-      <div className='wwwdBottom'>
-        {cardData.map((card) => (
-        <Card
-          key={card.id}
-          title={card.title}
-          description={card.description}
-          image={card.image}
-        />
-      ))}
+    <div className='wwwd-container'>
+      <div className='wwwd-text'>What We Do</div>
+      <div className='wwwd-bottom'>
+        {cardData.map(card => (
+          <div key={card.id} className='card'>
+            <img src={card.image} alt={card.heading} className='card-image' />
+            <div className='card-content'>
+              <div className='card-heading'>{card.title}</div>
+              <div className='card-description'>{card.description}</div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )

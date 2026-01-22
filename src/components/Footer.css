@@ -1,44 +1,92 @@
 .footerContainer {
     background-color: #16191C;
     color: #CBDADA;
-    height: 30vh;
+    height: clamp(15vh, 25vh, 30vh);
     padding: 10px 10%;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .footerLeft {
     flex: 1;
     justify-content: center;
     align-items: center;
 }
-.footerLeft > a {
+
+.footerLeft>a {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
 }
+
 .footerLogoImg {
-    height: 45px;
-    width: 35px;
+    height: clamp(25px, 5vh, 45px);
+    width: clamp(25px, 3vw, 35px);
 }
+
 .footerLogoText {
-    font-size: 2.5rem;
+    font-size: clamp(1.25rem, 2.5rem, 2.75rem);
     font-family: "Rilman", 'Courier New', Courier, monospace;
     font-weight: 100;
     color: #9EFC60;
 }
+
 .footerRight {
     display: flex;
     gap: 5px;
     flex-direction: column;
     color: #CBDADA;
     text-align: right;
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 1rem, 1.15rem);
     font-weight: 400;
-    font-family: "Poppins",'Courier New', Courier, monospace;
+    font-family: "Poppins", 'Courier New', Courier, monospace;
 }
+
 .footerLink {
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .footerLogoImg {
+        height: 45px;
+        width: 35px;
+    }
+
+    .footerContainer {
+        height: 20vh;
+    }
+
+    .footerLogoText {
+        font-size: 2rem
+    }
+}
+
+@media (max-width: 480px) {
+    .footerLogoImg {
+        height: 35px;
+        width: 30px;
+    }
+
+    .footerLogoText {
+        font-size: 1.75rem
+    }
+    .footerRight{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .footerLogoImg {
+        height: 30px;
+        width: 24px;
+    }
+    .footerLogoText {
+        font-size: 1.5rem
+    }
+    .footerRight{
+        font-size: 0.75rem;
+    }
 }

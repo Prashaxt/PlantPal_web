@@ -18,10 +18,37 @@
 }
 
 .comp2Text {
-    width: 600px;
+    width: 50%;
     text-align: right;
     font-family: "Poppins";
     font-weight: 600;
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 3rem, 3.5rem);
     color: #08843B;
+}
+
+@media (max-width: 900px) {
+    .comp2Container {
+    height: 40vh;
+}
+.comp2Text { 
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 480px) {
+    .comp2Container {
+    height: 30vh;
+}
+.comp2Text { 
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 375px) {
+    .comp2Container {
+    height: 25vh;
+}
+.comp2Text { 
+    font-size: 1rem;
+}
 }
