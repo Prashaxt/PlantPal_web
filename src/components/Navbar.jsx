@@ -1,27 +1,3 @@
-// import React from 'react'
-// import { Link } from 'react-scroll';
-// import './Navbar.css'
-
-// const Navbar = () => {
-//     return (
-//         <div className='navContainer'>
-//             <div className='logo'>
-//                 <Link href="/">
-//                     <img src={logo} className="logoImg" alt="PlantPal" />
-//                     <p className='logoText'>PlantPal</p>
-//                 </Link>
-//             </div>
-//             <div className='links'>
-//                 <Link to="home" smooth={true} duration={500} className='link'>Home</Link>
-//                 <Link to="aboutUs" smooth={true} duration={500} className='link'>About Us</Link>
-//                 <Link to="HelpSupport" smooth={true} duration={500} className='link'>Help & Support</Link>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default Navbar
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-scroll';
@@ -30,6 +6,10 @@ import './Navbar.css'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleLinkClick = () => {
+        setIsMenuOpen(false);
+    };
 
     return (
         <nav className="nav-container">
@@ -59,9 +39,9 @@ const Navbar = () => {
             {/* Mobile menu */}
             {isMenuOpen && (
                 <div className="mobile-menu">
-                    <Link to="home" smooth={true} duration={500} className='link'>Home</Link>
-                    <Link to="aboutUs" smooth={true} duration={500} className='link'>About Us</Link>
-                    <Link to="HelpSupport" smooth={true} duration={500} className='link'>Help & Support</Link>
+                    <Link to="home" smooth={true} duration={500} className='link' onClick={handleLinkClick}>Home</Link>
+                    <Link to="aboutUs" smooth={true} duration={500} className='link' onClick={handleLinkClick}>About Us</Link>
+                    <Link to="HelpSupport" smooth={true} duration={500} className='link' onClick={handleLinkClick}>Help & Support</Link>
                 </div>
             )}
 
