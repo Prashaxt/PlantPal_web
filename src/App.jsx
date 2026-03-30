@@ -1,5 +1,6 @@
 import './App.css'
 import AboutUs from './components/AboutUs'
+import AppSection from './components/AppSection'
 import Comp2 from './components/Comp2'
 import Footer from './components/Footer'
 import HelpSupport from './components/HelpSupport'
@@ -25,6 +26,8 @@ function App() {
       <SubHero />
 
       <WWWD />
+
+      <AppSection />
 
       <section id="HelpSupport">
         <HelpSupport />

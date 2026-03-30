@@ -1,44 +1,48 @@
 .help-support-container {
+    padding-top: 3rem;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #f0fdf4, #d1fae5);
+    /* background: linear-gradient(to bottom right, #f0fdf4, #d1fae5); */
+    background: #EDE8DC;
     font-family: "Poppins", 'Courier New', Courier, monospace;
 }
 
 .help-support-wrapper {
     /* max-width: 95%; */
     margin: 0 auto;
-    padding: 30px 16px;
+    padding: 30px 18%;
 }
 
 /* Header */
 .header {
     text-align: center;
-    margin-bottom: 48px;
 }
 
 .header-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #065f46;
-    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    letter-spacing: 0.14em;
+    color: #0A2E1A;
+    font-weight: 500;
 }
 
 
 
 /* FAQ Section */
 .faq-section {
-    background: white;
+    /* background: white; */
     border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 32px;
 }
 
 .faq-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #065f46;
-    margin-bottom: 28px;
-    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
 }
 
 .faq-categories {
@@ -53,34 +57,37 @@
 }
 
 .category-header {
+    padding-left: 36px;
     display: flex;
     align-items: center;
     margin-bottom: 12px;
 }
 
 .category-icon {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     color: #059669;
     margin-right: 12px;
 }
 
 .category-title {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #1f2937;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(10, 46, 26, 0.35);
 }
 
 .questions-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 2px;
     margin-left: 36px;
 }
 
 .faq-item {
     border: 1px solid #e5e7eb;
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
 }
 
@@ -90,7 +97,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 24px 28px;
     text-align: left;
     background: white;
     border: none;
@@ -105,7 +112,9 @@
 .question-text {
     font-weight: 500;
     color: #1f2937;
-    padding-right: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .chevron {
